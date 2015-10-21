@@ -1,0 +1,28 @@
+.sc-u-center-text {
+  text-align: center;
+}
+
+.sc-u-full-width {
+  display: block;
+  width: 100%;
+}
+
+.sc-u-center {
+  @include center();
+}
+
+.sc-quote {
+  margin: 0 auto;
+  width: 50%;
+
+  blockquote {
+    font-size: 5vw;
+    line-height: 1;
+    font-style: italic;
+    margin: 25px 0;
+  }
+
+  &__attribution {
+    text-align: right;
+  }
+}

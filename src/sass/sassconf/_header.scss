@@ -1,0 +1,18 @@
+.sc-header {
+  text-align: center;
+
+  &--hero {
+    @include center();
+  }
+
+  &__title {
+    font-size: 3vw;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+
+  &__copy {
+    font-size: 1.5vw;
+    line-height: 1.5;
+  }
+}

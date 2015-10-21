@@ -1,0 +1,32 @@
+<section class="step">
+  <div class="step__body">
+    <div class="sc-slide sc-slide--full-size sc-slide--slightly-defaults-mixin">
+      <header class="sc-header">
+        <h1 class="sc-header__title">Strategies for Handling Arguments</h1>
+      </header>
+      <div class="sc-slide__main">
+        <div class="grid">
+          <div class="grid__item grid__item--full">
+            <p class="sc-u-center-text">List (Default)</p>
+            <pre><code class="language-scss">@include(50%, deeppink, bold 20px/1 sans-serif, 'Placeholder');</code></pre>
+            <p class="sc-u-center-text">Keywords</p>
+
+            <pre><code class="language-scss">@include(
+  $text: 'Placeholder',
+  $ratio: 100%
+);</code></pre>
+          </div>
+          <div class="grid__item grid__item--full">
+            <p class="sc-u-center-text">Map</p>
+            <pre><code class="language-scss">$args: (
+  text: 'Placeholder',
+  ratio: 50%
+);
+
+@include fpo($args...);</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

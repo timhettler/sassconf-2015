@@ -1,0 +1,10 @@
+.sc-footer {
+  @include absolute-position($bottom: 0, $left: 0);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &--center {
+    justify-content: center;
+  }
+}

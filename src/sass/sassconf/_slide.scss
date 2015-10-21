@@ -1,0 +1,46 @@
+.sc-slide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 2.5%;
+
+  &--center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__main {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+  }
+
+  // Slide-specific styles
+
+  &--sharing-forms {
+    img {
+      @include center();
+      width: 50%;
+    }
+  }
+
+  &--contributing {
+    img {
+      display: block;
+      height: 250px;
+      margin: 0 auto;
+      width: auto;
+    }
+  }
+
+  &--what-is-github {
+    img {
+      height: 250px;
+    }
+  }
+}

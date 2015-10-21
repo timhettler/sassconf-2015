@@ -1,0 +1,36 @@
+//@import "meyer-reset/_reset.scss";
+@import "utilities/_placeholders.scss";
+@import "utilities/_mixins.scss";
+@import "utilities/_boxSize.scss";
+
+@import "_zIndex.scss";
+
+@import "_slides.scss";
+@import "_grid.scss";
+
+@import "sassconf/_vars.scss";
+@import "sassconf/_slide.scss";
+@import "sassconf/_utilities.scss";
+@import "sassconf/_text.scss";
+@import "sassconf/_code.scss";
+@import "sassconf/_prose.scss";
+@import "sassconf/_header.scss";
+@import "sassconf/_footer.scss";
+
+:root {
+  background: linear-gradient(to bottom, $iron, $iron 75%, $bouquet );
+  color: darken($pale-sky, 15);
+  font-family: $font-family-text;
+}
+
+a {
+  color: $midnight-blue;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin-left: 1.8em;
+}

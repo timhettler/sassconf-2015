@@ -1,0 +1,23 @@
+<section class="step">
+  <div class="step__body">
+    <div class="sc-slide sc-slide--full-size sc-slide--slightly-defaults-mixin">
+      <header class="sc-header">
+        <h1 class="sc-header__title">A Mixin With Namespaced !defaults</h1>
+      </header>
+      <div class="sc-slide__main">
+        <pre class="sc-code-example sc-code-example--large sc-u-center"><code class="language-scss">$fpo-ratio: 100% !default;
+$fpo-bg-color: slategray !default;
+
+@mixin fpo($ratio:$fpo-ratio, $fpo-bg-color:$bg-color) {
+  background-color: $bg-color;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: $ratio;
+  }
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
