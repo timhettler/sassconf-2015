@@ -1,0 +1,43 @@
+<section class="step">
+  <div class="step__body">
+    <div class="sc-slide sc-slide--full-size sc-slide--slightly-optimized-mixin">
+      <header class="sc-header">
+        <h1 class="sc-header__title">A Slightly Optimized Mixin</h1>
+      </header>
+      <div class="sc-slide__main">
+        <div class="grid">
+          <div class="grid__item grid__item grid__item--full">
+            <pre class="sc-code-example sc-u-center"><code class="language-scss">@mixin fpo(
+  $size: 100%, $bg-color: slategray, $color: #fff, $text: 'FPO'
+) {
+  background-color: $bg-color;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: $size;
+  }
+  
+  &:after {
+    content: $text;
+    color: $color;
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@include fpo(50%, tomato);</code></pre>
+          </div>
+          <div class="grid__item grid__item grid__item--full">
+            <div class="fpo-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sc-u-center-text"><a href="http://sassmeister.com/gist/6802d138df7a84eb6280" rel="external">Open this code in Sassmeister</a></div>
+    </div>
+  </div>
+</section>

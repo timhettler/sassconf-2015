@@ -4,7 +4,20 @@
   margin: auto;
   width: 80%;
 
+  &__header {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1.2em;
+  }
+
   p {
     margin: 1.2em 0;
+  }
+
+  blockquote {
+    border-left: 0.1em solid $midnight-blue;
+    font-style: italic;
+    padding-left: 1.24em;
   }
 }

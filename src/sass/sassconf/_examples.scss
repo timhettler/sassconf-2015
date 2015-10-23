@@ -1,0 +1,56 @@
+@mixin fpo-1() {
+  background-color: slategray;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  &:after {
+    content: 'FPO';
+    color: #fff;
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fpo-1 {
+  @include fpo-1();
+  width: 20vw;
+}
+
+@mixin fpo-2($size: 100%, $bg-color: slategray, $color: #fff, $text: 'FPO') {
+  background-color: $bg-color;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: $size;
+  }
+  
+  &:after {
+    content: $text;
+    color: $color;
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fpo-2 {
+  @include fpo-2(50%, tomato);
+  width: 20vw;
+}
+
+.fpo-3 {
+  @include fpo-2(100%, tomato);
+  width: 20vw;
+}

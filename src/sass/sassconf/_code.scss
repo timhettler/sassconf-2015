@@ -1,6 +1,10 @@
 .sc-code-example {
   font-size: 1vw;
 
+  &--medium {
+    font-size: 1.5vw;
+  }
+
   &--large {
     font-size: 2vw;
   }

@@ -16,11 +16,16 @@
 @import "sassconf/_prose.scss";
 @import "sassconf/_header.scss";
 @import "sassconf/_footer.scss";
+@import "sassconf/_examples.scss";
 
 :root {
   background: linear-gradient(to bottom, $iron, $iron 75%, $bouquet );
   color: darken($pale-sky, 15);
   font-family: $font-family-text;
+}
+
+code {
+  font-family: $font-family-code;
 }
 
 a {

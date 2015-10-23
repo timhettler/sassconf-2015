@@ -56,6 +56,12 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function () {
         document.body.classList.add('slide-ready');
     }, 0);
+
+    var $externalLinks = document.querySelectorAll('a[href^="http"]');
+
+    [].forEach.call($externalLinks, function (element) {
+        element.setAttribute('target', '_blank');
+    });
     
 
     // var request = new XMLHttpRequest();
