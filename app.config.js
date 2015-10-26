@@ -1,11 +1,13 @@
+'use strict';
+
 module.exports = {
 
     build_dir: 'build',
     compile_dir: 'dist',
 
     meta: {
-        title: 'SVGs Are a Thing Now',
-        description: 'A quick tour of the Whys &amp; Hows of using SVG in front-end development.',
+        title: 'Friends With Benefits',
+        description: 'Becoming a Valuable Member of the Sass Community',
         viewport: 'width=device-width, initial-scale=1, user-scalable=no, minimal-ui'
     },
 
