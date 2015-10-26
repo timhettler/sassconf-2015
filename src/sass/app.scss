@@ -22,6 +22,7 @@
   background: linear-gradient(to bottom, $iron, $iron 75%, $bouquet );
   color: darken($pale-sky, 15);
   font-family: $font-family-text;
+  vertical-align: baseline;
 }
 
 code {
