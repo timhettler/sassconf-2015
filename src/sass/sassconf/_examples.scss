@@ -21,6 +21,7 @@
 
 .fpo-1 {
   @include fpo-1();
+  margin: 0 auto;
   width: 20vw;
 }
 
@@ -47,10 +48,49 @@
 
 .fpo-2 {
   @include fpo-2(50%, tomato);
+  margin: 0 auto;
   width: 20vw;
 }
 
 .fpo-3 {
   @include fpo-2(100%, tomato);
+  margin: 0 auto;
+  width: 20vw;
+}
+
+%fpo {
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+  }
+  
+  &:after {
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin fpo--with-extend($size: 100%, $bg: slategray, $color: #fff, $text: 'FPO') {
+  @extend %fpo;
+  background: $bg;
+
+  &:before {
+    padding-bottom: if(unitless($size), percentage($size), $size);
+  }
+  
+  &:after {
+    content: $text;
+    color: $color;
+  }
+}
+
+.fpo--with-extend {
+  @include fpo--with-extend(0.75, linear-gradient(to bottom, $patina, $midnight-blue));
+  margin: 0 auto;
   width: 20vw;
 }
