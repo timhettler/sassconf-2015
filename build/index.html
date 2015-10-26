@@ -1,0 +1,1485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title></title>
+    <meta name="description" content="A quick tour of the Whys &amp; Hows of using SVG in front-end development." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+
+    <!-- compile:style app -->
+    <link type="text/css" rel="stylesheet" href="vendor/prism.css" />
+    <link type="text/css" rel="stylesheet" href="vendor/sanitize.css" />
+    <link type="text/css" rel="stylesheet" href="css/app.css" />
+    <!-- /compile -->
+</head>
+
+<body>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--title">
+                <div class="sc-slide__main">
+                    <header class="sc-header sc-header--hero">
+                        <h1 class="sc-header__title">Friends With Benefits</h1>
+                        <div class="sc-header__copy"><i>Becoming a Valuable Member of the Sass Community</i>
+                        </div>
+                    </header>
+                    <footer class="sc-footer">
+                        <div class="sc-footer__item"><a href="http://www.twitter.com/timhetter">@timhettler</a>
+                        </div>
+                        <div class="sc-footer__item"><a href="https://twitter.com/hashtag/sassconf">#sassconf</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body step__body--center">
+            <div class="sc-slide sc-slide--center sc-slide--share-your-work">
+                <div class="sc-quote">
+                    <blockquote>
+                        <p>&quot;Share your work; Amaze people with your productivity.&quot;</p>
+                    </blockquote>
+                    <p class="sc-quote__attribution">&mdash; Chris Eppstein, SassConf 2013</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body step__body--center">
+            <div class="sc-slide sc-slide--center sc-slide--no-idea">
+                <img src="assets/images/no-idea.gif" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body step__body--center">
+            <div class="sc-slide sc-slide--center sc-slide--ugly-code">
+                <div class="sc-quote">
+                    <blockquote>
+                        <p>&quot;It doesn't matter if your code is ugly. Put it out there!&quot;</p>
+                    </blockquote>
+                    <p class="sc-quote__attribution">&mdash; E. Miriam Suzanne, SassConf 2013</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sharing-forms">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Sharing Comes in Many Forms</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/twitter.svg" alt="">
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/sassmeister.svg" alt="">
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/github.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--contributing">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Contributing to the Community:</h1>
+                </header>
+                <div class="sc-slide__main sc-u-center-text">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <img class="sc-u-full-width" src="assets/images/interesting.gif" alt="">
+                            <p class="sc-text--3">Teaches</p>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img class="sc-u-full-width" src="assets/images/captain-planet.gif" alt="">
+                            <p class="sc-text--3">Inspires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--goals">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Workshop #goals:</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <ul class="sc-text--3">
+                        <li>Write code for an audience</li>
+                        <li>Share your code with the world</li>
+                        <li>Contribute to other people's projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--github">
+                <div class="sc-slide__main">
+                    <header class="sc-header sc-header--hero">
+                        <h1 class="sc-header__title">Part 1: Github Basics</h1>
+                    </header>
+                    <footer class="sc-footer">
+                        <div class="sc-footer__item"><a href="http://www.twitter.com/timhetter">@timhettler</a>
+                        </div>
+                        <div class="sc-footer__item"><a href="https://twitter.com/hashtag/sassconf">#sassconf</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--what-is-github">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">What is GitHub?</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid sc-u-center-text sc-prose">
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/git.svg" alt="">
+                            <p><b>Git</b>
+                            </p>
+                            <p>Keep track of changes to your files</p>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/github.svg" alt="">
+                            <p><b>GitHub</b>
+                            </p>
+                            <p>Contribute to projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--download-github">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Getting Started</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose sc-u-center-text">
+                        <p class="sc-text---3"><a href="https://desktop.github.com/" rel="external">Download GitHub for Desktop</a>
+                        </p>
+                        <p><i>(And <a href="https://github.com/join">create a GitHub accoun</a>t if you don't have one.)</i>
+                        </p>
+                        <div class="screenshot">
+                            <img class="sc-u-screenshot" src="assets/images/github-desktop.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--git-concepts">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Git Concepts</h1>
+                </header>
+                <div class="sc-slide__main sc-u-center-text sc-text--3">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/clone.svg" alt="">
+                            <p>Clone</p>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/branch.svg" alt="">
+                            <p>Branch</p>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/commit.svg" alt="">
+                            <p>Commit</p>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/merge.svg" alt="">
+                            <p>Merge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--forking">
+                <header class="sc-header">
+                    <h1 class="sc-header__title"><img class="sc-u-inline-image" src="assets/svg/clone.svg" alt="">Clone</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p>Cloning copies a project from GitHub to your computer.</p>
+                                <p>If you're starting a project from scratch, you can create it directly in the GitHub app.</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <img class="sc-u-screenshot" src="assets/images/clone-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--branching">
+                <header class="sc-header">
+                    <h1 class="sc-header__title"><img class="sc-u-inline-image" src="assets/svg/branch.svg" alt="">Branch</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p>All code is on a branch, <strong>master</strong> by default.</p>
+                                <p>Creating a new branch allows you to make changes without affecting other people's work.</p>
+                                <p>All development should be done in a branch other than <strong>master</strong>.</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <img class="sc-u-screenshot" src="assets/images/branch-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--branching">
+                <header class="sc-header">
+                    <h1 class="sc-header__title"><img class="sc-u-inline-image" src="assets/svg/commit.svg" alt="">Commit</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p>Changes you make aren't saved to the branch until you <strong>commit</strong> them.</p>
+                                <p>Making a commit takes a snapshot of the code. This allows you to see when changes were made and revert your code if needed.</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <img class="sc-u-screenshot" src="assets/images/commit-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--merging">
+                <header class="sc-header">
+                    <h1 class="sc-header__title"><img class="sc-u-inline-image" src="assets/svg/merge.svg" alt="">Merge</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p>Merging combines the code from one branch into another.</p>
+                                <p>Usually you merge code into the <strong>master branch</strong>, but you can merge into any branch.</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <img class="sc-u-screenshot" src="assets/images/merge-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--exercise">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Code Exercise</h1>
+                    <h2 class="sc-header__sub-title">Creating Your Own GitHub Repo</h2>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <ol>
+                                    <li>
+                                        <p>Create a new GitHub repo called "sassconf-workshop"</p>
+                                    </li>
+                                    <li>
+                                        <p>Download the project files: TODO</p>
+                                    </li>
+                                    <li>
+                                        <p>Commit the files with a useful message</p>
+                                    </li>
+                                    <li>
+                                        <p>Click the "Publish" button</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <img class="sc-u-screenshot" src="assets/images/workshop-repo-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--writing-title">
+                <div class="sc-slide__main">
+                    <header class="sc-header sc-header--hero">
+                        <h1 class="sc-header__title">Part 1:<br/>Writing Code for an Audience</h1>
+                        <div class="sc-u-center-text">
+                            <img src="assets/images/nerds.gif" alt="">
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--audience">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Who is Your Audience?</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <ul class="sc-text--3">
+                        <li>Strangers on the Internet</li>
+                        <li>Teammates / Coworkers</li>
+                        <li>Your Future Self</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--typical-mixin">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">An Unoptimized Mixin</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <pre class="sc-code-example sc-u-center"><code class="language-scss">@mixin fpo() {
+  background-color: slategray;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  &:after {
+    content: 'FPO';
+    color: #fff;
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@include fpo();</code></pre>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="fpo-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-u-center-text"><a href="http://sassmeister.com/gist/d9f82ce355ace677611f" rel="external">Open this code in Sassmeister</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--center sc-slide--habit-1">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Habit #1</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-quote">
+                        <blockquote>
+                            <p>
+                                Provide arguments for mixins, and give them sensible default values.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--audience">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Mixin Arguments</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <p>Mixin arguments allow you to customize the behavior of a mixin.</p>
+                        <pre class="sc-code-example sc-code-example--medium"><code class="language-scss">@mixin button($bg-color) {
+  background-color: $bg-color;
+}</code></pre>
+                        <p>Multiple arguments are separated by commas, and you can set default values the same way you define variables:</p>
+                        <pre class="sc-code-example sc-code-example--medium"><code class="language-scss">@mixin button($bg-color, $text-color:#FFF) {
+  background-color: $bg-color;
+  color: $text-color;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--audience">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Mixin Arguments, Continued</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <p>For truly optional arguments, use <code>null</code> as the default value.</p>
+                        <p>CSS properites with <code class="language-scss">null</code> as a value won't be output by Sass.</p>
+                        <pre class="sc-code-example"><code class="language-scss">@mixin button($bg-color, $text-color:#FFF, $border: null) {
+  border: $border;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.button { @include button(#C0FFEE); }</code></pre>
+                        <p>Compiles to:</p>
+                        <pre class="sc-code-example"><code class="language-scss">.button {
+  background-color: #C0FFEE;
+  color: #FFF;
+}</code></pre>
+                        <p>Required arguments have to be ordered before optional ones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--exercise">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Code Exercise</h1>
+                    <h2 class="sc-header__sub-title">Abstracting Our Mixin</h2>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <ol>
+                                    <li>
+                                        <p>Create a new branch in your GitHub repo called "fpo-mixin"</p>
+                                    </li>
+                                    <li>
+                                        <p>Create a new fo file called 'src/fpo.scss'</p>
+                                    </li>
+                                    <li>
+                                        <p>Add arguments to the mixin for any CSS properties that you think a user would want to change.</p>
+                                    </li>
+                                    <li>
+                                        <p>Run <code class="language-bash">grunt sass</code> to compile your code, or <code class="language-bash">grunt watch</code> to compile your code as you work.</p>
+                                    </li>
+                                    <li>
+                                        <p>Commit your changes, and sync them to GitHub.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <pre class="sc-code-example sc-u-center"><code class="language-scss">@mixin fpo() {
+  background-color: slategray;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  &:after {
+    content: 'FPO';
+    color: #fff;
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--slightly-optimized-mixin">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">A Slightly Optimized Mixin</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <pre class="sc-code-example sc-u-center"><code class="language-scss">@mixin fpo(
+  $size: 100%, $bg-color: slategray, $color: #fff, $text: 'FPO'
+) {
+  background-color: $bg-color;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: $size;
+  }
+  
+  &:after {
+    content: $text;
+    color: $color;
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@include fpo(50%, tomato);</code></pre>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="fpo-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-u-center-text"><a href="http://sassmeister.com/gist/6802d138df7a84eb6280" rel="external">Open this code in Sassmeister</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--center sc-slide--habit-2">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Habit #2</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-quote">
+                        <blockquote>
+                            <p>
+                                Allow default values to be overriden on a per-project basis.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--default-flag">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Guarded Variables</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <p class="sc-u-center-text sc-code-example sc-code-example--large"><code class="language-scss">$bg-color: slategray !default;</code>
+                        </p>
+                        <p>From the Sass documentation:</p>
+                        <blockquote>
+                            <p>You can assign to variables if they aren’t already assigned by adding the !default flag to the end of the value. This means that if the variable has already been assigned to, it won’t be re-assigned, but if it doesn’t have
+                                a value yet, it will be given one.</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--center sc-slide--habit-3">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Habit #3</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-quote">
+                        <blockquote>
+                            <p>
+                                Namespace your variables to avoid collisions
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--slightly-defaults-mixin">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">A Mixin With Namespaced &amp; Guarded Variables</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <pre class="sc-code-example sc-code-example--medium sc-u-center"><code class="language-scss">$fpo-size: 100% !default;
+$fpo-bg-color: slategray !default;
+$fpo-color: #fff !default;
+$fpo-text: 'FPO' !default;
+
+@mixin fpo($size: $fpo-size, $bg-color: $fpo-bg-color, $color: $fpo-color, $text: $fpo-text) {
+  &hellip;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--default-flag">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Using Guarded Variables</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <pre class="sc-code-example sc-code-example--large"><code class="language-scss">$fpo-bg-color: tomato;
+
+@import "_fpo.scss";
+
+.fpo {
+  @include fpo();
+}</code></pre>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="fpo-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--center sc-slide--habit-1">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Habit #4</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-quote">
+                        <blockquote>
+                            <p>
+                                Anticipate &amp; Correct Common Errors.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--center sc-slide--habit-1">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Habit #4</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-quote">
+                        <blockquote>
+                            <p>
+                                Minimize the code you output to CSS.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--exercise">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Code Exercise</h1>
+                    <h2 class="sc-header__sub-title">Fixing Common Errors &amp; Minimizing Filesize</h2>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <ul>
+                                    <li>
+                                        <p>What if the user enters a decimal number instead of a percentage for the size?</p>
+                                    </li>
+                                    <li>
+                                        <p>What if the user wants to use a background gradient?</p>
+                                    </li>
+                                    <li>
+                                        <p>How can we make sure the text is readable by default?</p>
+                                    </li>
+                                    <li>
+                                        <p>Are there parts of the mixin we can omit under certain circumstances, or move to a placeholder?</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p><strong>Hint:</strong> There are built-in <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html">Sass functions</a> that can help us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--slightly-optimized-mixin">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">A Super-Optimized Mixin</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <pre class="sc-code-example sc-code-example--small"><code class="language-scss">$fpo-size: 100% !default;
+$fpo-bg: slategray !default;
+$fpo-color: #fff !default;
+$fpo-text: 'FPO' !default;
+
+%fpo {
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+  }
+  
+  &:after {
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin fpo($size: $fpo-size, $bg: $fpo-bg, $color: $fpo-color, $text: $fpo-text) {
+  @extend %fpo;
+  background: $bg;
+
+  &:before {
+    padding-bottom: if(unitless($size), percentage($size), $size);
+  }
+  
+  &:after {
+    content: $text;
+    color: $color;
+  }
+}
+
+@include fpo(0.5, linear-gradient(to bottom, #000, #fff));</code></pre>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill grid__item--center">
+                            <div class="fpo--with-extend"></div>
+                            <p class="sc-u-center-text"><a href="http://sassmeister.com/gist/c74d9768ccd7d4edd04a" rel="external">Open this code in Sassmeister</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--center sc-slide--habit-4">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Habit #3</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-quote">
+                        <blockquote>
+                            <p>
+                                Give detailed feedback when a developer messes up
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--contributing">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Feedback Directives</h1>
+                </header>
+                <div class="sc-slide__main sc-u-center-text">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <code class="sc-text--3 language-scss">@error</code>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <code class="sc-text--3 language-scss">@warn</code>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <code class="sc-text--3 language-scss">@debug</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--error">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Critical Fail</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <pre class="sc-code-example sc-code-example--large"><code class="language-scss">@error "Expected a string, got a number";</code></pre>
+                        <p>Errors stop the Sass compiler completely and sends a message to the user</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--warn">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Your Attention, Please</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <pre class="sc-code-example sc-code-example--large"><code class="language-scss">@warn "This function will be removed in the next release";</code></pre>
+                        <p>Warnings send a message to the user, but allows Sass to compile.</p>
+                        <p>Good for deprecation notices, best practices, and other non-critical information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--debug">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Peeking Under the Hood</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <pre class="sc-code-example sc-code-example--large"><code class="language-scss">@function complicated-math { @return 1+1; }
+@debug "The result was: #{complicated-math()}";
+//DEBUG: "The results was: 2"
+</code></pre>
+                        <p>Useful during development to expose values that don't get output to CSS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--full-size sc-slide--exercise">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Code Exercise</h1>
+                    <h2 class="sc-header__sub-title">Informing the User</h2>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <ul>
+                            <li>
+                                <p>Throw an error if the user tries to set <code class="language-scss">$size</code> to something other than a number or percentage.</p>
+                            </li>
+                            <li>
+                                <p>Warn the user if <code class="language-scss">$color</code> is the same as the <code class="language-scss">$bg-color</code>.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--goals">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Part 2 Review:</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <p>Coding for an audience means:</p>
+                        <ul>
+                            <li>
+                                <p>Providing arguments to extend mixin functionality,</p>
+                            </li>
+                            <li>
+                                <p>Giving those arguments default values (that can be overridden),</p>
+                            </li>
+                            <li>
+                                <p>Anticipating common user errors,</p>
+                            </li>
+                            <li>
+                                <p>Minimizing the size of your output.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sharing">
+                <div class="sc-slide__main">
+                    <header class="sc-header sc-header--hero">
+                        <h1 class="sc-header__title">Part 3: Sharing Your Code</h1>
+                    </header>
+                    <footer class="sc-footer">
+                        <div class="sc-footer__item"><a href="http://www.twitter.com/timhetter">@timhettler</a>
+                        </div>
+                        <div class="sc-footer__item"><a href="https://twitter.com/hashtag/sassconf">#sassconf</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sharing-essentials">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Sharing Essentials</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <ul>
+                            <li>
+                                <p>Tell people how to use your code with <strong>documentation</strong>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Earn their trust with <strong>tests</strong>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sassdoc">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Documenting your code with SassDoc</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item sc-u-center-text">
+                            <img src="assets/svg/sassdoc.svg" alt="">
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p>Sassdoc uses special comment conventions ("<strong>annotations</strong>") to build beautiful &amp; easy to understand documentation.</p>
+                                <pre class="sc-code-example"><code class="language-scss">/// Set an element's height to a percentage of it's width.
+/// @param {Number} $height-ratio [1] - The height percentage
+/// @output An :after pseudo-element with padding-bottom equal 
+/// to the $height-ratio percentage
+@mixin ratioHeight ($height-ratio:1) {
+  &hellip;
+              </code></pre>
+                                <p>Automatically keep documentation up-to-date with the command line tool, or integrations with build systems. (Grunt, Gulp, etc.)</p>
+                                <p><code class="sc-code-example language-scss">sassdoc src/sass/</code>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sassdoc-essentials">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Essential Annotations</h1>
+                </header>
+                <div class="sc-slide__main sc-slide__main--vertical">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <div class="sc-prose sc-u-center-text">
+                                <div class="sc-prose__header">
+                                    Variables:
+                                </div>
+                                <p><code class="language-">@type</code>  <code class="language-">@prop</code>
+                                </p>
+                                <div class="sc-prose__header">
+                                    Mixins &amp; Functions:
+                                </div>
+                                <p><code class="language-">@param</code>
+                                </p>
+                                <p><code class="language-">@outputs</code> / <code class="language-">@returns</code>
+                                </p>
+                                <p><code class="language-">@example</code>
+                                </p>
+                            </div>
+                            <p class="sc-u-center-text"><a href="http://sassdoc.com/annotations/" rel="external">See the full list on the SassDoc site</a>
+                            </p>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <pre class="sc-code-example"><code class="language-scss">/// The text color to be used when a background is determined to be "dark"
+/// @type Color
+$yiq-light: #fff !default;
+
+/// Sets the specified background color and 
+/// calculates a dark or light contrasted text color
+/// @param {Color} $base - The color to be tested
+/// @param {Color} $dark [$yiq-dark] - The color to return if $base is light
+/// @param {Color} $light [$yiq-light] - The color to return if $base is dark
+/// @outputs a background-color/text color combination with proper contrast
+@mixin yiq-contrasted(
+  $background-color,
+  $dark: $yiq-contrasted-dark-default,
+  $light: $yiq-contrasted-light-default
+) {
+  &hellip;
+            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--exercise">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Code Exercise</h1>
+                    <h2 class="sc-header__sub-title">Creating Documentation</h2>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <ol>
+                            <li>
+                                <p>Add annotations to the code you created earlier</p>
+                            </li>
+                            <li>
+                                <p>Generate your documentation: <code class="language-bash">grunt sassdoc</code>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Commit your changes to GitHub</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sassdoc">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Viewing Documentation with GitHub Pages</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p>GitHub will generate a site for your project if you create a special branch called "<strong>gh-pages</strong>".</p>
+                                <p>You can create your own files, or use GitHub's site generator for quick (and beautiful) results.</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/images/gh-pages-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--exercise">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Code Exercise</h1>
+                    <h2 class="sc-header__sub-title">Creating a Project Site</h2>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <ol>
+                                    <li>
+                                        <p>Create a new branch called "gh-pages", and sync it to GitHub</p>
+                                    </li>
+                                    <li>
+                                        <p>View your documentation at
+                                            <br/>
+                                            <b>http://{username}.github.io/sassconf-workshop/sassdoc/</b>
+                                        </p>
+                                    </li>
+
+                                    <!-- <li>
+                  <p>Go to the <a href="https://pages.github.com/">GitHub Pages</a> website and follow the instructions to generate a site.</p>
+                </li>
+                <li>
+                  <p>Use your README as the content of your project site.</p>
+                </li>
+                <li>
+                  <p>View your documentation at<br/><strong>http://{github username}.github.io/</strong></p>
+                </li> -->
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <img src="assets/images/gh-pages-branch-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sharing">
+                <div class="sc-slide__main">
+                    <header class="sc-header sc-header--hero">
+                        <h1 class="sc-header__title">Unit Testing with True</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sassdoc-essentials">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">What Are Unit Tests?</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <p>Unit Tests make sure a "<strong>unit</strong>" of code produces an expected output with a given input.</p>
+                        <p>Functions &amp; Mixins are units of code that can be tested.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sassdoc-essentials">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Anatomy of a Test</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <div class="sc-prose__header">
+                                    Test Module
+                                </div>
+                                <p>A way of grouping similar tests.</p>
+                                <div class="sc-prose__header">
+                                    The Test & Expectation
+                                </div>
+                                <p>The actual code we are testing, and an assumption about what the test should do</p>
+                                <div class="sc-prose__header">
+                                    Assertion
+                                </div>
+                                <p>Does the actual code match the assumption we made?</p>
+                                <p><i>If working correctly, this unit of code will ___</i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <pre class="sc-code-exmple line-numbers"><code class="language-scss">@include test-module('Utilities') {
+
+  // Testing Functions
+  @include test('Map Add [function]') {
+    $base: (one: 1, two: 1, three: 1);
+    $add: (one: 1, two: 2, three: -1);
+
+    $test: map-add($base, $add);
+    $expect: (one: 2, two: 3, three: 0);
+    @include assert-equal($test, $expect,
+      'Return the sum of two numeric maps');
+  }
+
+  // Testing Mixins
+  @include test('Font Size [mixin]') {
+    @include assert('Output a font size and line height based on keyword.') {
+      @include input {
+        @include font-size(large);
+      }
+
+      @include expect {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sassdoc-essentials">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Running Tests</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="sc-prose">
+                        <div class="sc-prose__header">
+                            With Ruby Sass
+                        </div>
+                        <p><code class="language-bash">true-cli test/tests.scss</code>
+                        </p>
+                        <div class="sc-prose__header">
+                            With libSass
+                        </div>
+                        <p>Requires a JS test runner (like Mocha) with a shim, and runs as part of your build process.</p>
+                        <p><code class="language-bash">grunt test</code>
+                        </p>
+                        <p>This is not as scary as it sounds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--exercise">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Code Exercise</h1>
+                    <h2 class="sc-header__sub-title">Testing Your Code</h2>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <ol>
+                                    <li>
+                                        <p>Open <code class="language-">test/tests.scss</code> and create tests for the code you previously created.</p>
+                                    </li>
+                                    <li>
+                                        <p>Run your tests by entering <code class="language-bash">grunt test</code> into the Terminal.</p>
+                                    </li>
+                                    <li>
+                                        <p>Once your tests run properly, commit your changes and sync them to GitHub.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <pre class="sc-code-exmple line-numbers"><code class="language-scss">@include test-module('Utilities') {
+
+  // Testing Functions
+  @include test('Map Add [function]') {
+    $base: (one: 1, two: 1, three: 1);
+    $add: (one: 1, two: 2, three: -1);
+
+    $test: map-add($base, $add);
+    $expect: (one: 2, two: 3, three: 0);
+    @include assert-equal($test, $expect,
+      'Return the sum of two numeric maps');
+  }
+
+  // Testing Mixins
+  @include test('Font Size [mixin]') {
+    @include assert('Output a font size and line height based on keyword.') {
+      @include input {
+        @include font-size(large);
+      }
+
+      @include expect {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sharing">
+                <div class="sc-slide__main">
+                    <header class="sc-header sc-header--hero">
+                        <h1 class="sc-header__title">Part 4: Working With Other People's Code</h1>
+                    </header>
+                    <footer class="sc-footer">
+                        <div class="sc-footer__item"><a href="http://www.twitter.com/timhetter">@timhettler</a>
+                        </div>
+                        <div class="sc-footer__item"><a href="https://twitter.com/hashtag/sassconf">#sassconf</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--git-concepts">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Advanced Git Concepts</h1>
+                </header>
+                <div class="sc-slide__main sc-u-center-text sc-text--3">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/fork.svg" alt="">
+                            <p>Fork</p>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <img src="assets/svg/pull-request.svg" alt="">
+                            <p>Pull Request</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--forking">
+                <header class="sc-header">
+                    <h1 class="sc-header__title"><img class="sc-u-inline-image" src="assets/svg/fork.svg" alt="">Fork</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p>Forking makes a personal copy of an existing project, allowing you make changes to it.</p>
+                                <p>It's the first step in contributing to other people's projects.</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <img class="sc-u-screenshot" src="assets/images/fork-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--pull-requests">
+                <header class="sc-header">
+                    <h1 class="sc-header__title"><img class="sc-u-inline-image" src="assets/svg/pull-request.svg" alt="">Pull Request</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <p>Pull Requests start a discussion about the changes you made in a branch.</p>
+                                <p><i>You're requesting that the project owners "pull" changes from your copy of the repo into the main repo.</i>
+                                </p>
+                                <p>You can continue making changes to a branch after a pull request has been created.</p>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item grid__item--fill">
+                            <img class="sc-u-screenshot" src="assets/images/pull-request-ss.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--exercise">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Code Exercise</h1>
+                    <h2 class="sc-header__sub-title">Contributing to an Open Source Project</h2>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <div class="sc-prose">
+                                <ol>
+                                    <li>
+                                        <p>Fork the SassConf Utility Library to make your own copy of it.</p>
+                                    </li>
+                                    <li>
+                                        <p>Clone it in GitHub Desktop, and create a new branch called "{your name}-contribution"</p>
+                                    </li>
+                                    <li>
+                                        <p>Create a new partial file in the sass folder</p>
+                                    </li>
+                                    <li>
+                                        <p>Add your function or mixin, and create documentation</p>
+                                    </li>
+                                    <li>
+                                        <p>Create a test file in the test folder</p>
+                                    </li>
+                                    <li>
+                                        <p>Submit a Pull Request</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- compile:script app -->
+    <script type="text/javascript" src="vendor/zepto.js"></script>
+    <script type="text/javascript" src="vendor/prism.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <!-- /compile -->
+    <script>
+        'use strict';
+        var WebFontConfig = {
+            google: {
+                families: ['Source+Serif+Pro::latin', 'Source+Code+Pro::latin', 'Source+Sans+Pro::latin']
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' === document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+</body>
+
+</html>
