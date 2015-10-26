@@ -1,0 +1,56 @@
+<section class="step">
+  <div class="step__body">
+    <div class="sc-slide sc-slide--full-size sc-slide--slightly-optimized-mixin">
+      <header class="sc-header">
+        <h1 class="sc-header__title">A Super-Optimized Mixin</h1>
+      </header>
+      <div class="sc-slide__main">
+        <div class="grid">
+          <div class="grid__item grid__item grid__item--fill">
+            <pre class="sc-code-example sc-code-example--small"><code class="language-scss">$fpo-size: 100% !default;
+$fpo-bg: slategray !default;
+$fpo-color: #fff !default;
+$fpo-text: 'FPO' !default;
+
+%fpo {
+  position: relative;
+  
+  &:before {
+    content: '';
+    display: block;
+  }
+  
+  &:after {
+    font: 20px/1 Helvetica;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin fpo($size: $fpo-size, $bg: $fpo-bg, $color: $fpo-color, $text: $fpo-text) {
+  @extend %fpo;
+  background: $bg;
+
+  &:before {
+    padding-bottom: if(unitless($size), percentage($size), $size);
+  }
+  
+  &:after {
+    content: $text;
+    color: $color;
+  }
+}
+
+@include fpo(0.5, linear-gradient(to bottom, #000, #fff));</code></pre>
+          </div>
+          <div class="grid__item grid__item grid__item--fill grid__item--center">
+            <div class="fpo--with-extend"></div>
+            <p class="sc-u-center-text"><a href="http://sassmeister.com/gist/c74d9768ccd7d4edd04a" rel="external">Open this code in Sassmeister</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
