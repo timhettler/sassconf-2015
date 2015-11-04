@@ -6,11 +6,16 @@
       </header>
       <div class="sc-slide__main">
         <pre class="sc-code-example sc-code-example--medium sc-u-center"><code class="language-scss">$fpo-size: 100% !default;
-$fpo-bg-color: slategray !default;
-$fpo-color: #fff !default;
+$fpo-color--bg: slategray !default;
+$fpo-color--text: #fff !default;
 $fpo-text: 'FPO' !default;
 
-@mixin fpo($size: $fpo-size, $bg-color: $fpo-bg-color, $color: $fpo-color, $text: $fpo-text) {
+@mixin fpo(
+  $size: $fpo-size, 
+  $color--bg: $fpo-color--bg, 
+  $color--text: $fpo-color--text, 
+  $text: $fpo-text
+) {
   &hellip;
 }</code></pre>
       </div>

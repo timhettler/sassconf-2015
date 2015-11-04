@@ -1,44 +1,47 @@
 <section class="step">
   <div class="step__body">
-    <div class="sc-slide sc-slide--exercise">
+    <div class="sc-slide sc-slide--full-size sc-slide--audience">
       <header class="sc-header">
-        <h1 class="sc-header__title">Code Exercise</h1>
-        <h2 class="sc-header__sub-title">Abstracting Our Mixin</h2>
+        <h1 class="sc-header__title">On Naming Things</h1>
       </header>
       <div class="sc-slide__main">
-        <div class="grid">
-          <div class="grid__item grid__item grid__item--fill">
-            <div class="sc-prose">
-              <ol>
-                <li><p>Create a new branch in your GitHub repo called "fpo-mixin"</p></li>
-                <li><p>Open: <code>sass/_fpo.scss</code></p></li>
-                <li><p>Add arguments to the mixin for any CSS properties that you think a user would want to change. Make sure to give the arguments default values.</p></li>
-                <li><p>Commit your changes, and sync them to GitHub.</p></li>
-              </ol>
-              <p><b>Tip:</b> Run <code class="language-bash">grunt server</code> to see your work</p>
+        <div class="sc-prose sc-u-center-text"> 
+          <p>Clarity over cleverness over brevity</p>
+          <div class="grid">
+            <div class="grid__item grid__item--full">
+              <pre class="sc-code-example"><code class="language-scss">@mixin search($x, $y) { &hellip; }</code></pre>
+            </div>
+            <div class="grid__item grid__item--full">
+              <pre class="sc-code-example"><code class="language-scss">@mixin search($needle, $haystack) { &hellip; }</code></pre>
+            </div>
+            <div class="grid__item grid__item--full">
+              <pre class="sc-code-example"><code class="language-scss">@mixin search($key, $map) { &hellip; }</code></pre>
             </div>
           </div>
-          <div class="grid__item grid__item grid__item--fill">
-             <pre class="sc-code-example sc-u-center"><code class="language-scss">@mixin fpo() {
-  background-color: slategray;
-  position: relative;
+          <p>Follow established conventions</p>
+          <pre class="sc-code-example" style="display: inline-block;"><code class="language-scss">@function to-upper-case($string)</code></pre>
+          <p>Name modularly</p>
+          <div class="grid">
+            <div class="grid__item grid__item--fill" style="margin-right: 20px;">
+                <pre class="sc-code-example"><code class="language-scss">$color: #24f089;
+$bg-color: #333;
+$orange: #fa5400;
 
-  &:before {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
-  }
-  
-  &:after {
-    content: 'FPO';
-    color: #fff;
-    font: 20px/1 Helvetica;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}</code></pre>
+$transition: 300ms;
+$quick-transition: $transition / 2;
+
+$gutter-width: 50px;</code></pre>
+            </div>
+            <div class="grid__item grid__item--fill">
+                <pre class="sc-code-example"><code class="language-scss">$color--text: #24f089;
+$color--bg: #333;
+$color--orange: #fa5400;
+
+$timing--default: 300ms;
+$timing--quick: $timing--default / 2;
+
+$size--gutter: 50px;</code></pre>
+            </div>
           </div>
         </div>
       </div>

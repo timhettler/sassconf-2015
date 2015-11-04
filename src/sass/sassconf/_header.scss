@@ -9,6 +9,13 @@
     font-size: 3vw;
     line-height: 1;
     margin-bottom: 25px;
+
+    &--habit {
+      &::after {
+        counter-increment: habit;
+        content: " #" counter(habit)
+      }
+    }
   }
 
   &__sub-title {

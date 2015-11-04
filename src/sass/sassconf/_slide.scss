@@ -57,6 +57,14 @@
     }
   }
 
+  &--audience {
+    img {
+      height: 250px;
+      width: auto;
+      max-width: none;
+    }
+  }
+
   &--sassdoc {
     img {
       display: block;
