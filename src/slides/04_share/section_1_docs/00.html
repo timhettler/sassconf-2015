@@ -1,0 +1,28 @@
+<section class="step">
+  <div class="step__body">
+    <div class="sc-slide sc-slide--sassdoc">
+      <header class="sc-header">
+        <h1 class="sc-header__title">Documenting your code with SassDoc</h1>
+      </header>
+      <div class="sc-slide__main">
+        <div class="grid">
+          <div class="grid__item sc-u-center-text"><img src="assets/svg/sassdoc.svg" alt=""></div>
+          <div class="grid__item grid__item--fill">
+            <div class="sc-prose">
+              <p>Sassdoc uses special comment conventions ("<strong>annotations</strong>") to build beautiful &amp; easy to understand documentation.</p>
+              <pre class="sc-code-example"><code class="language-scss">/// Set an element's height to a percentage of it's width.
+/// @param {Number} $height-ratio [1] - The height percentage
+/// @output An :after pseudo-element with padding-bottom equal 
+/// to the $height-ratio percentage
+@mixin ratioHeight ($height-ratio:1) {
+  &hellip;
+              </code></pre>
+              <p>Automatically keep documentation up-to-date with the command line tool, or integrations with build systems. (Grunt, Gulp, etc.)</p>
+              <p><code class="sc-code-example language-scss">sassdoc src/sass/</code></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,7 +1,7 @@
 {
-  "name": "app",
-  "description": "A boilerplate for Angular projects.",
-  "version": "0.2.0",
+  "name": "Becoming a Valuable Member of the Sass Community",
+  "description": "The Slides for Tim Hettler's SassConf 2015 Workshop",
+  "version": "1.0.0",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-autoprefixer": "~2.2.0",

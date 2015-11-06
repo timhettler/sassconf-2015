@@ -8,9 +8,9 @@
         <div class="grid">
           <div class="grid__item grid__item grid__item--fill">
             <pre class="sc-code-example sc-u-center"><code class="language-scss">@mixin fpo(
-  $size: 100%, $bg-color: slategray, $color: #fff, $text: 'FPO'
+  $size: 100%, $color--bg: slategray, $color--text: #fff, $text: 'FPO'
 ) {
-  background-color: $bg-color;
+  background-color: $color--bg;
   position: relative;
 
   &:before {
@@ -21,7 +21,7 @@
   
   &:after {
     content: $text;
-    color: $color;
+    color: $color--text;
     font: 20px/1 Helvetica;
     position: absolute;
     top: 50%;

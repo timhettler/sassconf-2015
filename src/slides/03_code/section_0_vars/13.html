@@ -8,8 +8,8 @@
         <div class="grid">
           <div class="grid__item grid__item grid__item--fill">
             <pre class="sc-code-example sc-code-example--small"><code class="language-scss">$fpo-size: 100% !default;
-$fpo-bg: slategray !default;
-$fpo-color: #fff !default;
+$fpo-color--bg: slategray !default;
+$fpo-color--text: #fff !default;
 $fpo-text: 'FPO' !default;
 
 %fpo {
@@ -29,9 +29,14 @@ $fpo-text: 'FPO' !default;
   }
 }
 
-@mixin fpo($size: $fpo-size, $bg: $fpo-bg, $color: $fpo-color, $text: $fpo-text) {
+@mixin fpo(
+  $size: $fpo-size, 
+  $color--bg: $fpo-color--bg, 
+  $color--text: $fpo-color--text, 
+  $text: $fpo-text
+) {
   @extend %fpo;
-  background: $bg;
+  background: $color--bg;
 
   &:before {
     padding-bottom: if(unitless($size), percentage($size), $size);
@@ -39,11 +44,11 @@ $fpo-text: 'FPO' !default;
   
   &:after {
     content: $text;
-    color: $color;
+    color: $color--text;
   }
 }
 
-@include fpo(0.5, linear-gradient(to bottom, #000, #fff));</code></pre>
+@include fpo(0.75, linear-gradient(to bottom, $patina, $midnight-blue));</code></pre>
           </div>
           <div class="grid__item grid__item grid__item--fill grid__item--center">
             <div class="fpo--with-extend"></div>
