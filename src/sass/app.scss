@@ -23,7 +23,7 @@
   color: darken($pale-sky, 15);
   font-family: $font-family-text;
   vertical-align: baseline;
-  counter-reset: habit;
+  counter-reset: habit 0;
 }
 
 code {
