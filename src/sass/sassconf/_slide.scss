@@ -25,6 +25,15 @@
   }
 
   // Slide-specific styles
+  
+  &--about {
+    img {
+      display: block;
+      border-radius: 50%;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
 
   &--sharing-forms {
     img {
