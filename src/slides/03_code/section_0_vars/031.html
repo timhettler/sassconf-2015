@@ -6,12 +6,11 @@
       </header>
       <div class="sc-slide__main">
         <div class="sc-prose">
-          <p>For truly optional arguments, use <code>null</code> as the default value.</p>
-          <p>CSS properites with <code class="language-scss">null</code> as a value won't be output by Sass.</p>
+          <p>For truly optional arguments, use <code class="language-scss">null</code> as the default value.</p>
           <pre class="sc-code-example"><code class="language-scss">@mixin button($bg-color, $text-color:#FFF, $border: null) {
-  border: $border;
   background-color: $bg-color;
   color: $text-color;
+  border: $border;
 }
 
 .button { @include button(#C0FFEE); }</code></pre>
@@ -20,7 +19,6 @@
   background-color: #C0FFEE;
   color: #FFF;
 }</code></pre>
-          <p>Required arguments have to be ordered before optional ones.</p>
         </div>
       </div>
     </div>

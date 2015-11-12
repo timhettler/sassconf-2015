@@ -6,15 +6,41 @@
       </header>
       <div class="sc-slide__main">
         <div class="sc-prose">
-          <p>Mixin arguments allow you to customize the behavior of a mixin.</p>
-          <pre class="sc-code-example sc-code-example--medium"><code class="language-scss">@mixin button($bg-color) {
+          <p>Arguments allow you to customize the behavior of a mixin.</p>
+          <div class="grid">
+            <div class="grid__item grid__item--fill" style="margin-right: 20px">
+              <pre class="sc-code-example"><code class="language-scss">@mixin button($bg-color) {
   background-color: $bg-color;
+}
+.button { @include button(violet); }</code></pre>
+            </div>
+            <div class="grid__item grid__item--fill">
+              <pre class="sc-code-example"><code class="language-scss">.button {
+  background-color: violet;
 }</code></pre>
-          <p>Multiple arguments are separated by commas, and you can set default values the same way you define variables:</p>
-          <pre class="sc-code-example sc-code-example--medium"><code class="language-scss">@mixin button($bg-color, $text-color:#FFF) {
+            </div>
+          </div>
+          <p>Multiple arguments are separated by commas:</p>
+          <div class="grid">
+            <div class="grid__item grid__item--fill" style="margin-right: 20px">
+              <pre class="sc-code-example"><code class="language-scss">@mixin button($bg-color, $text-color: #fff) {
   background-color: $bg-color;
   color: $text-color;
+}
+.button-1 { @include button(violet);
+.button-2 { @include button(violet, black);  }</code></pre>
+            </div>
+            <div class="grid__item grid__item--fill">
+              <pre class="sc-code-example"><code class="language-scss">.button-1 {
+  background-color: violet;
+  color: #fff;
+}
+
+.button-2 {
+  background-color: violet;
+  color: black;
 }</code></pre>
+            </div>
         </div>
       </div>
     </div>

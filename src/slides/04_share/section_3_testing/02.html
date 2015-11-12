@@ -24,29 +24,28 @@
             </div>
           </div>
           <div class="grid__item grid__item--fill">
-            <pre class="sc-code-exmple line-numbers"><code class="language-scss">@include test-module('Utilities') {
+            <pre class="sc-code-exmple line-numbers"><code class="language-scss">@include test-module('Example Test') {
+  @include test('Invert Color [function]') {
+    $test: invert(#000);
+    $expect: white;
 
-  // Testing Functions
-  @include test('Map Add [function]') {
-    $base: (one: 1, two: 1, three: 1);
-    $add: (one: 1, two: 2, three: -1);
-
-    $test: map-add($base, $add);
-    $expect: (one: 2, two: 3, three: 0);
-    @include assert-equal($test, $expect,
-      'Return the sum of two numeric maps');
+    @include assert-equal($test, $expect, 'The color should be inverted');
   }
 
-  // Testing Mixins
-  @include test('Font Size [mixin]') {
-    @include assert('Output a font size and line height based on keyword.') {
+  @include test('Invert Color [mixin]') {
+    @include assert('The text color should be the opposite of the background color') {
+      @mixin invert ($color) {
+        background-color: $color;
+        color: invert($color);
+      }
+
       @include input {
-        @include font-size(large);
+        @include invert(#000);
       }
 
       @include expect {
-        font-size: 2rem;
-        line-height: 3rem;
+        background-color: #000;
+        color: white;
       }
     }
   }

@@ -51,7 +51,7 @@
   &--git-concepts {
     img {
       display: block;
-      height: 250px;
+      height: 200px;
       margin: 0 auto;
       width: auto;
     }
@@ -70,6 +70,14 @@
       display: block;
       margin: 0 5vw;
       width: 30vw;
+    }
+  }
+
+  &--download-github {
+    img {
+      display: block;
+      height: 40vh;
+      margin: 0 auto;
     }
   }
 }

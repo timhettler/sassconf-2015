@@ -38,8 +38,9 @@ var $slides = document.querySelectorAll('.step'),
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    if (window.location.hash !== '') {
-        currentSlide = parseInt(window.location.hash.replace('#!/',''),10);
+    if (window.location.hash.replace('#!/','') !== '') {
+        var hash = parseInt(window.location.hash.replace('#!/',''),10);
+        currentSlide = (isNaN(hash) ? 0 : hash);
     }
 
     changeSlide(0);

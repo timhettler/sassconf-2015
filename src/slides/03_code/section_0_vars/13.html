@@ -8,35 +8,22 @@
         <div class="grid">
           <div class="grid__item grid__item grid__item--fill">
             <pre class="sc-code-example sc-code-example--small"><code class="language-scss">$fpo-size: 100% !default;
-$fpo-color--bg: slategray !default;
+$fpo-bg: slategray !default;
 $fpo-color--text: #fff !default;
 $fpo-text: 'FPO' !default;
 
 %fpo {
-  position: relative;
-  
-  &:before {
-    content: '';
-    display: block;
-  }
-  
-  &:after {
-    font: 20px/1 Helvetica;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  &hellip;
 }
 
 @mixin fpo(
   $size: $fpo-size, 
-  $color--bg: $fpo-color--bg, 
+  $bg: $fpo-bg, 
   $color--text: $fpo-color--text, 
   $text: $fpo-text
 ) {
   @extend %fpo;
-  background: $color--bg;
+  background: $bg;
 
   &:before {
     padding-bottom: if(unitless($size), percentage($size), $size);

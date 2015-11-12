@@ -11,44 +11,27 @@
               <div class="sc-prose__header">
                 Variables:
               </div>
-              <p><code class="language-">@type</code> <code class="language-">@prop</code></p>
-              <div class="sc-prose__header">
-                Mixins &amp; Functions:
-              </div>
-              <p><code class="language-">@param</code></p>
-              <p><code class="language-">@outputs</code> / <code class="language-">@returns</code></p>
-              <p><code class="language-">@example</code></p>
+              <p><code class="language-">@type</code></p>
+              <p><code class="language-">@prop</code></p>
             </div>
-            <p class="sc-u-center-text"><a href="http://sassdoc.com/annotations/" rel="external">See the full list on the SassDoc site</a></p>
           </div>
           <div class="grid__item grid__item--fill">
-            <pre class="sc-code-example"><code class="language-scss">/// The text color to be used when a background is determined to be "dark"
-/// @type Color
-$yiq-light: #fff !default;
+            <pre class="sc-code-example"><code class="language-scss">/// Output a warning if an FPO element is being used
+/// @type Bool
+$fpo-warn: true !default;
 
-/// Sets the specified background color and 
-/// calculates a dark or light contrasted text color
-/// @param {Color} $base - The color to be tested
-/// @param {Color} $dark [$yiq-dark] - The color to return if $base is light
-/// @param {Color} $light [$yiq-light] - The color to return if $base is dark
-/// @outputs a background-color/text color combination with proper contrast
-/// @example
-///   .headline {
-///     @include yiq-contrasted(#FA5400, #FFF, #000);
-///   }
-///   
-///   // CSS output:
-///   .headline {
-///     background-color: #FA5400;
-///     color: #FFF;
-///   }
-@mixin yiq-contrasted(
-  $background-color,
-  $dark: $yiq-contrasted-dark-default,
-  $light: $yiq-contrasted-light-default
-) {
-  &hellip;
-            </code></pre>
+/// Default parameters for the fpo mixin.
+/// @type Map
+/// @prop {Number} ratio [1] - The height percentage (to be used by ratioHeight)
+/// @prop {Color} color [random] - The background color of the element
+/// @prop {List} font [bold 20px/1 sans-serif] The font property of the element
+/// @prop {String} text [FPO] The text to be displayed in the element
+$fpo-defaults: (
+  ratio: 1,
+  color: rgb(random(255), random(255), random(255)),
+  font: bold 20px/1 sans-serif,
+  text: 'FPO'
+) !default;</code></pre>
           </div>
         </div>
       </div>

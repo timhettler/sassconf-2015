@@ -1,0 +1,48 @@
+<section class="step">
+  <div class="step__body">
+    <div class="sc-slide sc-slide--sassdoc-essentials">
+      <header class="sc-header">
+        <h1 class="sc-header__title">Essential Annotations, Continued</h1>
+      </header>
+      <div class="sc-slide__main">
+        <div class="grid">
+          <div class="grid__item grid__item--fill">
+            <div class="sc-prose sc-u-center-text">
+              <div class="sc-prose__header">
+                Mixins &amp; Functions:
+              </div>
+              <p><code class="language-">@arg</code></p>
+              <p><code class="language-">@outputs</code> / <code class="language-">@returns</code></p>
+              <p><code class="language-">@example</code></p>
+            </div>
+            <p class="sc-u-center-text"><a href="http://sassdoc.com/annotations/" rel="external">See the full list on the SassDoc site</a></p>
+          </div>
+          <div class="grid__item grid__item--fill">
+            <pre class="sc-code-example"><code class="language-scss">/// Sets the specified background color and calculates a dark or light contrasted text color
+/// @arg {Color} $base - The color to be tested
+/// @arg {Color} $dark [$yiq-dark] - The color to return if $base is light
+/// @arg {Color} $light [$yiq-light] - The color to return if $base is dark
+/// @outputs a background-color/text color combination with proper contrast
+/// @example
+///   .headline {
+///     @include yiq-contrasted(#FA5400, #FFF, #000);
+///   }
+///   
+///   // CSS output:
+///   .headline {
+///     background-color: #FA5400;
+///     color: #FFF;
+///   }
+@mixin yiq-contrasted(
+  $base,
+  $dark: $yiq-dark,
+  $light: $yiq-light
+) {
+  &hellip;
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

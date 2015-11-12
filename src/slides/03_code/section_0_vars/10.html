@@ -1,14 +1,30 @@
 <section class="step">
   <div class="step__body">
-    <div class="sc-slide sc-slide--center sc-slide--habit-1">
+    <div class="sc-slide sc-slide--exercise">
       <header class="sc-header">
-        <h1 class="sc-header__title sc-header__title--habit">Habit</h1>
+        <h1 class="sc-header__title">Code Exercise</h1>
+        <h2 class="sc-header__sub-title">Minimizing Filesize</h2>
       </header>
       <div class="sc-slide__main">
-        <div class="sc-quote">
-          <blockquote><p>
-            Minimize the code you output to CSS.
-          </p></blockquote>
+        <div class="grid">
+          <div class="grid__item grid__item grid__item--fill">
+            <div class="sc-prose">
+              <ul>
+                <li><p>Find the parts of the FPO mixin that don't change and move them to a placeholder</p></li>
+                <li><p>Use the FPO mixin to <strong>extend</strong> the placeholder</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid__item grid__item grid__item--half">
+               <pre style="width:100%;" class="sc-code-example sc-code-example--large sc-u-center"><code class="language-scss">%fpo {
+  &hellip;
+}
+
+@mixin fpo (&hellip;) {
+  @extend %fpo;
+  &hellip;
+}</code></pre>
+          </div>
         </div>
       </div>
     </div>
