@@ -500,7 +500,7 @@
                     <blockquote>
                         <p>&quot;It doesn't matter if your code is ugly. Put it out there!&quot;</p>
                     </blockquote>
-                    <p class="sc-quote__attribution">&mdash; E. Miriam Suzanne, SassConf 2013</p>
+                    <p class="sc-quote__attribution">&mdash; Miriam Suzanne, SassConf 2013</p>
                 </div>
             </div>
         </div>
@@ -599,11 +599,6 @@
                 <div class="sc-slide__main">
                     <header class="sc-header sc-header--hero">
                         <h1 class="sc-header__title">Part 1: Github Basics</h1>
-                        <div class="sc-u-center-text">
-                            <a href="https://xkcd.com/1296/">
-                                <img src="assets/images/git_commit.png" alt="">
-                            </a>
-                        </div>
                     </header>
                     <footer class="sc-footer">
                         <div class="sc-footer__item"><a href="http://www.twitter.com/timhetter">@timhettler</a>
@@ -781,7 +776,7 @@
                 </header>
                 <div class="sc-slide__main">
                     <div class="grid">
-                        <div class="grid__item grid__item grid__item--fill">
+                        <div class="grid__item grid__item--half">
                             <div class="sc-prose">
                                 <ol>
                                     <li>
@@ -800,6 +795,15 @@
                                         <p>Use the body to explain <strong>why</strong> instead of how.</p>
                                     </li>
                                 </ol>
+                            </div>
+                        </div>
+                        <div class="grid__item grid__item--half">
+                            <div class="sc-prose sc-u-center-text" style="margin-top:50px;">
+                                <p>
+                                    <a href="https://xkcd.com/1296/">
+                                        <img src="assets/images/git_commit.png" alt="">
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -861,7 +865,7 @@
             <div class="sc-slide sc-slide--exercise">
                 <header class="sc-header">
                     <h1 class="sc-header__title">Code Exercise</h1>
-                    <h2 class="sc-header__sub-title">Creating Your Own GitHub Repo</h2>
+                    <h2 class="sc-header__sub-title">Cloning the Workshop Repo</h2>
                 </header>
                 <div class="sc-slide__main">
                     <div class="grid">
@@ -1880,10 +1884,10 @@ $fpo-defaults: (
                                 <p>Check out the <strong>docs-and-tests</strong> branch.</p>
                             </li>
                             <li>
-                                <p>Create documentation for the <strong>fpo</strong> and <strong>put-a-bird-on-it</strong> modules by dding SassDoc annotations.</p>
+                                <p>Create documentation for the <strong>fpo</strong> and <strong>put-a-bird-on-it</strong> modules by adding SassDoc annotations.</p>
                             </li>
                             <li>
-                                <p>Generate your documentation: <code class="language-bash">grunt sassdoc</code>
+                                <p>View your documentation: <code class="language-bash">grunt sassdoc-server</code>
                                 </p>
                             </li>
                         </ol>
@@ -1928,13 +1932,19 @@ $fpo-defaults: (
                             <div class="sc-prose">
                                 <ol>
                                     <li>
-                                        <p>Create a new branch called "gh-pages", and sync it to GitHub</p>
+                                        <p>Create a new branch called <strong>gh-pages</strong>, and sync it to GitHub</p>
                                     </li>
                                     <li>
                                         <p>View your documentation at
                                             <br/>
                                             <b>http://{username}.github.io/sassconf-workshop/sassdoc/</b>
                                         </p>
+                                    </li>
+                                    <li>
+                                        <p>Launch the <strong>automatic page generator</strong>, found in the repo settings page.</p>
+                                    </li>
+                                    <li>
+                                        <p>Update the README file with a link to the SassDoc site, and choose a theme for your GitHub Page.</p>
                                     </li>
                                 </ol>
                             </div>
