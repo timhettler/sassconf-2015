@@ -14,19 +14,15 @@
                   <p>Throw an error if the user tries to set <code class="language-scss">$size</code> to something other than a number or percentage.</p>
                 </li>
                 <li>
+                  <p>Output the <strong>lightness difference</strong> between the text color and the background color as a debug statement.</p>
+                </li>
+                <li>
                   <p>Warn the user if a light text color is being used on a light background, or a dark text color is being used on a dark background.</p>
                 </li>
               </ul>
             </div>
           </div>
           <div class="grid__item grid__item--half">
-            <div class="sc-prose">
-              <p><code class="language-">@error "$size requires either a
-percentage or an integer";</code></p>
-
-              <p><code class="language-">@warn "The contrast between the text
-and background-color is very low";</code></p>
-            </div>
           </div>
         </div>
       </div>
