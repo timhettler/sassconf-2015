@@ -939,8 +939,10 @@
                     <div class="grid">
                         <div class="grid__item grid__item--full">
                             <div class="sc-u-center-text">
-                                <img src="assets/images/nerds.gif" alt="">
-                                <p class="sc-text--2">Strangers on the Internet</p>
+                                <a href="https://twitter.com/horse_sass/status/648890079956434944">
+                                    <img src="assets/images/horse_sass.png" alt="">
+                                </a>
+                                <p class="sc-text--2">Your Future Self</p>
                             </div>
                         </div>
                         <div class="grid__item grid__item--full">
@@ -951,10 +953,8 @@
                         </div>
                         <div class="grid__item grid__item--full">
                             <div class="sc-u-center-text">
-                                <a href="https://twitter.com/horse_sass/status/648890079956434944">
-                                    <img src="assets/images/horse_sass.png" alt="">
-                                </a>
-                                <p class="sc-text--2">Your Future Self</p>
+                                <img src="assets/images/nerds.gif" alt="">
+                                <p class="sc-text--2">Strangers on the Internet</p>
                             </div>
                         </div>
                     </div>
@@ -1188,10 +1188,12 @@ $size--gutter: 50px;</code></pre>
                                         <p>Add arguments to the mixin for any CSS properties that you think a user would want to change. Make sure to give the arguments default values.</p>
                                     </li>
                                     <li>
+                                        <p>Run <code class="language-bash">grunt server</code> to see your work</p>
+                                    </li>
+                                    <li>
                                         <p>Commit your changes, and sync them to GitHub.</p>
                                     </li>
                                 </ol>
-                                <p><b>Tip:</b> Run <code class="language-bash">grunt server</code> to see your work</p>
                             </div>
                         </div>
                         <div class="grid__item grid__item grid__item--fill">
@@ -1659,21 +1661,15 @@ $fpo-text: 'FPO' !default;
                                         <p>Throw an error if the user tries to set <code class="language-scss">$size</code> to something other than a number or percentage.</p>
                                     </li>
                                     <li>
+                                        <p>Output the <strong>lightness difference</strong> between the text color and the background color as a debug statement.</p>
+                                    </li>
+                                    <li>
                                         <p>Warn the user if a light text color is being used on a light background, or a dark text color is being used on a dark background.</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="grid__item grid__item--half">
-                            <div class="sc-prose">
-                                <p><code class="language-">@error "$size requires either a
-percentage or an integer";</code>
-                                </p>
-
-                                <p><code class="language-">@warn "The contrast between the text
-and background-color is very low";</code>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -1862,8 +1858,6 @@ $fpo-defaults: (
                                 <p><code class="language-">@example</code>
                                 </p>
                             </div>
-                            <p class="sc-u-center-text"><a href="http://sassdoc.com/annotations/" rel="external">See the full list on the SassDoc site</a>
-                            </p>
                         </div>
                         <div class="grid__item grid__item--fill">
                             <pre class="sc-code-example"><code class="language-scss">/// Sets the specified background color and calculates a dark or light contrasted text color
@@ -1887,6 +1881,48 @@ $fpo-defaults: (
   $light: $yiq-light
 ) {
   &hellip;
+            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__body">
+            <div class="sc-slide sc-slide--sassdoc-essentials">
+                <header class="sc-header">
+                    <h1 class="sc-header__title">Essential Annotations, Continued</h1>
+                </header>
+                <div class="sc-slide__main">
+                    <div class="grid">
+                        <div class="grid__item grid__item--fill">
+                            <div class="sc-prose sc-u-center-text">
+                                <div class="sc-prose__header">
+                                    File-Level Annotations:
+                                </div>
+                                <p><code class="language-">@group</code>
+                                </p>
+                                <p><code class="language-">@author</code>
+                                </p>
+                            </div>
+                            <p class="sc-u-center-text"><a href="http://sassdoc.com/annotations/" rel="external">See the full list on the SassDoc site</a>
+                            </p>
+                        </div>
+                        <div class="grid__item grid__item--fill">
+                            <pre class="sc-code-example"><code class="language-scss">////
+/// @group Put A Bird On It
+/// @author Tim Hettler
+////
+
+/// The fill color of the birds.
+/// @type Color
+$scu-bird-color: #231F20 !default;
+
+/// The size of the element that the birds will be contained in.
+/// @type Number
+$scu-bird-size: 100px !default;
+&hellip;
             </code></pre>
                         </div>
                     </div>
