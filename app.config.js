@@ -2,7 +2,7 @@
 
 module.exports = {
 
-    build_dir: 'build',
+    build_dir: 'slides',
     compile_dir: 'dist',
 
     meta: {
